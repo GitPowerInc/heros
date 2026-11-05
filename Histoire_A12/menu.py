@@ -2,6 +2,7 @@ def menu() -> dict:
     """Création du personnage : retourne le dictionnaire gameState."""
     print("=== CRÉATION DU PERSONNAGE ===")
     nom: str = input("Quel est votre nom ? ")
+    classe: list = ["Mage, Chevalier, TBD"]
 
     gameState: dict = {
         "nom": nom,
