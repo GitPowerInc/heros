@@ -3,11 +3,10 @@ def menu() -> dict:
     print("=== CRÉATION DU PERSONNAGE ===")
     nom: str = input("Quel est votre nom ? ")
     classe: list = ["Mage, Chevalier, TBD"]
-
     gameState: dict = {
         "nom": nom,
         "force": 1,
-        "vie": 1,
+        "HP": 1,
         "inventaire": [],
     }
 
@@ -15,16 +14,19 @@ def menu() -> dict:
     print("1 - Mage   2 - Chevalier   3 - TBD")
     choix: str = input("> ")
     if choix == "1":
-        gameState["inventaire"].append("Wooden Sword")
-        gameState["force"] = gameState["force"] + 3
-        print(f"Votre force passe à {gameState['force']}.")
+        gameState["inventaire"].append("Wooden Stick")
+        gameState["force"] = 10
+        gameState["HP"] = 12
         res = 2
     elif choix == "2":
+        gameState["inventaire"].append("Wooden Sword")
+        gameState["force"] = 7
+        gameState["HP"] = 20
         res = 2
     else:
         print("Choix invalide.")
         res = 1                  # on reste sur cette page
 
 
-    print(f"Bienvenue, {nom} ! Force : {gameState['force']}, Vie : {gameState['vie']}\n")
+    print(f"Bienvenue, {nom} ! Force : {gameState['force']}, HP : {gameState['HP']}\n")
     return gameState
