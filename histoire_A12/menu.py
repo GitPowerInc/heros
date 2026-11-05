@@ -9,6 +9,9 @@ def menu() -> dict:
         "classe": "",
         "HP": 1,
         "inventaire": [],
+        "maxStorage": 3,
+        "XP": 0,
+        "LVL": 1
     }
 
     print("Choisissez votre classe : ")
