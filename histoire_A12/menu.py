@@ -5,13 +5,13 @@ def menu() -> dict:
     classe: list = ["Mage", "Chevalier", "TBD"]
     gameState: dict = {
         "nom": nom,
-        "force": 1,
         "classe": "",
+        "level": 1,
+        "XP": 0,
+        "force": 1,
         "HP": 1,
         "inventaire": [],
-        "maxStorage": 3,
-        "XP": 0,
-        "LVL": 1
+        "maxStorage": 3
     }
 
     print("Choisissez votre classe : ")
@@ -33,5 +33,7 @@ def menu() -> dict:
 
     gameState["classe"] = classe[int(choix)-1]
 
-    print(f"Bienvenue dans le donjon, honorable {gameState['classe']} ! Voici vos stats : \n\t - Force : {gameState['force']} \n\t - HP : {gameState['HP']}\n")
+    print(f"Bienvenue dans le donjon, honorable {gameState['classe']} ! Voici vos stats :")
+    for nom, val in list(gameState.items())[2:]:
+        print(f"\t- {nom.capitalize()}: {val}")
     return gameState
