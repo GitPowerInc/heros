@@ -32,5 +32,5 @@ def afficher_carte(etage:int)->None:
 
     Args:
         etage (int): Le numéro de l'étage à afficher
-    """    
+    """
     # à faire par LPDJ
