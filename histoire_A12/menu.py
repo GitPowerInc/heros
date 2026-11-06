@@ -1,3 +1,5 @@
+from OUTILS.carte import creer_carte
+
 def menu() -> dict:
     """Création du personnage : retourne le dictionnaire gameState."""
     print("=== CRÉATION DU PERSONNAGE ===")
@@ -11,7 +13,9 @@ def menu() -> dict:
         "force": 1,
         "HP": 1,
         "inventaire": [],
-        "maxStorage": 3
+        "maxStorage": 3,
+        "carte":creer_carte(),
+        "position":(0,1,1)
     }
 
     print("Choisissez votre classe : ")
