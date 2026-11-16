@@ -3,7 +3,7 @@ from OUTILS.carte import creer_carte
 def menu() -> dict:
     """Création du personnage : retourne le dictionnaire gameState."""
     print("=== CRÉATION DU PERSONNAGE ===")
-    nom: str = input("Quel est votre nom ? ")
+    nom: str = input("Greetings, adventurer. What may your name be? ")
     classe: list = ["Mage", "Chevalier", "TBD"]
     gameState: dict = {
         "nom": nom,
