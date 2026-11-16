@@ -1,0 +1,1 @@
+# health, xp, hunger, stamina, mp
