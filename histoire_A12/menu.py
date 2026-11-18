@@ -1,4 +1,6 @@
 from OUTILS.carte import creer_carte
+from random import randint, random
+from time import *
 
 def menu() -> dict:
     """Création du personnage : retourne le dictionnaire gameState."""
