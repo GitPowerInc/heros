@@ -13,8 +13,8 @@ def menu() -> dict:
         "force": 1,
         "stamina": 0,
         "maxStamina": 0,
-        "magicPower": 0,
-        "maxMagicPower": 0,
+        "mana": 0,
+        "maxMana": 0,
         "HP": 1,
         "inventory": [],
         "maxStorage": 3,
@@ -39,15 +39,15 @@ def menu() -> dict:
             gameState["inventory"].append("Wooden Stick")
             gameState["force"] = 10
             gameState["HP"] = 12
-            gameState["magicPower"]=10
-            gameState["maxMagicPower"]=10
+            gameState["mana"]=10
+            gameState["maxMana"]=10
 
         elif choix == "3":
             gameState["inventory"].append("Wooden Bow")
             gameState["force"] = 7
             gameState["HP"] = 20
-            gameState["magicPower"]=6
-            gameState["maxMagicPower"]=6
+            gameState["mana"]=6
+            gameState["maxMana"]=6
             gameState["stamina"] = 8
             gameState["maxStamina"] = 8
 
