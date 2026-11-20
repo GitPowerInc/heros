@@ -13,6 +13,7 @@ def menu() -> dict:
         "level": 1,
         "XP": 0,
         "force": 1,
+        "defense": 1,
         "stamina": 0,
         "maxStamina": 0,
         "mana": 0,
