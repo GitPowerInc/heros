@@ -1,5 +1,5 @@
 from OUTILS.carte import creer_carte
-from random import randint, random
+from random import randint, random, sample
 from time import *
 
 def menu() -> dict:
@@ -12,8 +12,10 @@ def menu() -> dict:
         "classe": "",
         "level": 1,
         "XP": 0,
-        "force": 1,
-        "defense": 1,
+        "phyStrength": 1,
+        "magicStrength": 1, #multiplicator of each spell
+        "phyDefense": 1,
+        "magicDefense": 1,
         "stamina": 0,
         "maxStamina": 0,
         "mana": 0,
@@ -33,21 +35,21 @@ def menu() -> dict:
         choix = input("> ")
         if choix == "1":
             gameState["inventory"].append("Wooden Sword")
-            gameState["force"] = 7
+            gameState["strength"] = 7
             gameState["HP"] = 20
             gameState["stamina"] = 10
             gameState["maxStamina"] = 10
 
         elif choix == "2":
             gameState["inventory"].append("Wooden Stick")
-            gameState["force"] = 10
+            gameState["strength"] = 10
             gameState["HP"] = 12
             gameState["mana"]=10
             gameState["maxMana"]=10
 
         elif choix == "3":
             gameState["inventory"].append("Wooden Bow")
-            gameState["force"] = 7
+            gameState["strength"] = 7
             gameState["HP"] = 20
             gameState["mana"]=6
             gameState["maxMana"]=6

@@ -7,7 +7,16 @@ une information (ici True / False) et c'est la page qui choisit la suite.
 Pour les utiliser dans une page :
     from OUTILS.combat import combat_dragon
 """
+#tour par tour
+#multi-enemy
 
+def single_damage(strength, defense, spell_atk): #str depends on atk type
+    dmg = spell_atk * strength * (10/(100+defense))
+    return round(dmg+0.2*dmg*random()-0.1)
+print(single_damage(10,5,5))
+
+
+#def multi_damage():
 
 def combat(gameState: dict, monstre: dict) -> bool:
     """
