@@ -11,6 +11,8 @@ def bar(typ, gameState):
     nb_minus=length-nb_plus
     if typ=="health":
         color="#1253FF"
+    elif typ=="XP":
+        maxStat=fetchLevelXP(fetchLevel(gameState["XP"]))
     bar="[" + "+"*nb_plus + "-"*nb_minus + "]"
         #for i in range():
 

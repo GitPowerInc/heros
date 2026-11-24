@@ -14,6 +14,13 @@ def fetchLevel(XP):
     maxLevel:int = 20
     t:float = inverse_lerp(1, maxLevel, currentLevel);
     requiredXP:float = round(lerp(start, end, t));
+
+
+def fetchLevelXP(level):
+    #XP needed for prev LVL - current LVL
+    return None
+
+
     
 def hasLeveledUp(gameState, earnedXP):
     currentLevel = gameState["level"]
