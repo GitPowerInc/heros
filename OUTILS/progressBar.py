@@ -5,12 +5,20 @@
 def bar(typ, gameState):
     color=""
     length=15
+    stat=gameState[typ]
+    maxStat=gameState["max"+typ.capitalize()]
+    nb_plus=round(stat/maxStat*length)
+    nb_minus=length-nb_plus
     if typ=="health":
         color="#1253FF"
-        stat=gameState["health"]
-    bar="["
-    for i in range(length):
-        
+    bar="[" + "+"*nb_plus + "-"*nb_minus + "]"
+        #for i in range():
+
+    return bar
+
+
+
+
 
 
     
