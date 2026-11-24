@@ -1,3 +1,6 @@
+from random import random
+
+
 """
 Fonctions annexes pour les combats.
 
@@ -13,7 +16,7 @@ Pour les utiliser dans une page :
 def single_damage(strength, defense, spell_atk): #str depends on atk type
     dmg = spell_atk * strength * (10/(100+defense))
     return round(dmg+0.2*dmg*random()-0.1)
-print(single_damage(10,5,5))
+print(single_damage(50,25,25))
 
 
 #def multi_damage():
